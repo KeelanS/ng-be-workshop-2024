@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "version": 2,
+  "title": "FlyDeploy executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "flyAppName": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "distLocation": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What dist location would you like to use?"
+    }
+  },
+  "required": []
+}
