@@ -54,13 +54,13 @@
       }
     },
     "deploy": {
+      "inputs": [{ "runtime": "fly version" }],
       "executor": "@nx-workshop/internal-plugin:fly-deploy",
       "outputs": [],
       "options": {
         "distLocation": "dist/apps/movies-api",
         "flyAppName": "kesa-api"
-      },
-      "dependsOn": [{ "target": "build", "projects": "self", "params": "forward" }]
+      }
     }
   }
 }

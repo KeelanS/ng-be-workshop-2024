@@ -105,9 +105,9 @@
       }
     },
     "deploy": {
+      "inputs": [{ "externalDependencies": ["nx", "surge" ] }],
       "executor": "nx:run-commands",
       "outputs": [],
-      "dependsOn": ["build"],
       "options": {
         "command": "npx surge dist/apps/movies-app/browser ${SURGE_DOMAIN} --token ${SURGE_TOKEN}"
       }
