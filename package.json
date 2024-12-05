@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve"
+    "start": "nx serve",
+    "prepare": "husky"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@rx-angular/state": "^18.1.0",
     "@rx-angular/template": "^18.0.3",
     "axios": "^1.6.0",
+    "husky": "^9.1.7",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.3"
